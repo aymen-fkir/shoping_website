@@ -1,0 +1,188 @@
+/* Define variables */
+:root {
+    --primary-color: hsl(213deg 85% 97%);
+    --secondary-color: hsl(233deg 36% 38%);
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(218deg 50% 91%);
+    height: 100vh;
+    font-family: 'Poppins';
+    overflow: hidden;
+    
+}
+
+.SearchOption{
+    margin-right: 50px;
+    margin-top: -9px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5px;
+    min-width: 150px;
+    background-color: var(--primary-color);
+    width: 200px;
+}
+
+.opt{
+    width: 80px;
+}
+
+.option{
+    margin-bottom: 5px;
+    display: flex;
+    height: 40px;
+    width: 140px;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 5px;
+    align-items: center;
+    width: 170px;
+    font-weight: 300;
+    font-size: 15px;
+    
+}
+.sort{
+    background-color: rgba(109, 73, 193, 0.178);
+    color: hsl(240, 85%, 65%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+}
+
+.option input{
+    background-color: hsla(0, 4%, 48%, 0);
+    border-color: hsla(0, 0%, 0%, 0.019);
+    width: 9em;
+    border: none;
+    border-bottom:1px solid hsl(221, 39%, 53%);
+    outline: none;
+
+}
+
+.option input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.listOfproducts{
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; */
+    row-gap: 0.5em;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-bottom: 20px;
+
+}
+.product{
+    height: 200px;
+    width: 970px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: start;
+    align-items: center;
+    box-shadow: -0.5em 0.5em 0.5em hsla(228, 95%, 75%, 0.26);
+    background-color: var(--primary-color);
+}
+
+img{
+    width: 200px;
+    height: 150px;
+}
+
+.Details{
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 130px;
+    font-weight: 300;
+    font-size: 400;
+}
+
+.image-hover {
+    position: relative;
+}
+  
+.image-hover p {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    padding-left:59px;
+    padding-right: 59px;
+    padding-bottom: 40px;
+    width: 90px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+  
+.image-hover:hover p {
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, 0%);
+}
+
+.Description{
+    font-size: small;
+    font-weight: 500;
+    width: 300px;
+    height: 50px;
+}
+
+.btns,.Searchbtn{
+    background-color: rgba(109, 73, 193, 0.178);
+    color: hsl(240, 76%, 77%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;    
+}
+
+
+.shop{
+    margin-top: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 170px;
+    font-weight: 200;
+}
+
+.btnshop{
+
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1px ;
+}
+
+.btnshop:hover{
+    scale: 1.1;
+}
+
+.containerbd{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+a{
+    color: inherit;
+}
+  

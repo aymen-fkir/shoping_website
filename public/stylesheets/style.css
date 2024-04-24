@@ -1,0 +1,91 @@
+/* Define variables */
+:root {
+    --primary-color: hsl(213deg 85% 97%);
+    --secondary-color: hsl(233deg 36% 38%);
+}
+
+body{
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218deg 50% 91%);
+    height: 100vh;
+    font-family: 'Poppins';
+    
+}
+
+
+.login form{
+    min-height: 400px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    background-color: var(--primary-color);
+}
+input{
+    margin-bottom: 30px;
+}
+
+.email,.password{
+    background-color: hsl(0deg 0% 100%);
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    margin-top: -3em;
+    outline: none;
+    border: none;
+    min-width: 200px;
+    margin-top: 10px;
+}
+
+.email input::placeholder,
+.password input::placeholder {
+  color: hsl(0deg 0% 0%);
+  font-size: 0.9em;
+}
+
+.submit{
+    font-size: 1em;
+    color: hsl(0deg 0% 100%);
+    background-color: #9f57bf;
+    outline: none;
+    border: none;
+    padding: 1em;
+    min-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    cursor: pointer;
+}
+
+.submit:hover{
+    transition: 200ms;
+    transform: scale(1.1);
+    
+}
+
+.container input{
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #9f57bf;
+}
+.container input:hover input ~ .checkmark {
+    background-color: #9f57bf;
+}
+

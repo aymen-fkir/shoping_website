@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap') ;
+
+:root{
+    --text: #2c3345;
+    --textcolor: hsl(220, 18%, 42%);
+    --background: hsl(240, 85%, 97%);
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.main{
+    height: 800px;
+    width: 550px;
+    background-color: white;
+    border-radius: 10px;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.main-title{
+    font-family: "roboto";
+    font-size: 30px;
+    font-weight: 600;
+}
+.under_text{
+    font-family: "roboto";
+    font-size: 10px;
+    color: var(--textcolor);
+    margin: 5px;
+
+}
+.title{
+    border-bottom: 1px solid;
+    border-radius: 3px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: start;
+    margin-left: -40px;
+}
+.input{
+    padding-left: 50px;
+    font-size: 15px;
+}
+.Name{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+input{
+    height: 2em;
+    border: 1px solid hsl(231, 23%, 41%);
+    border-radius: 5px;
+    max-width: 400px;
+
+}
+input:focus{
+    outline-color:  hsl(215, 83%, 57%);
+    box-shadow: 1px 1px 1px 1px hsl(231, 71%, 84%);
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+.options label{
+    font-size: 17px;
+}
+.options input{
+    height: 1em;
+    box-shadow: none;
+}
+
+span,label{
+    margin-bottom: 3px;
+}
+
+
+.button{
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+button{
+    width: 250px;
+    height: 3em;
+    font-size: 15px;
+    color:white;
+    font-weight: 600;
+    background-color:hsl(240, 64%, 17%) ;
+    border-color: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+

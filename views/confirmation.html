@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <link rel="stylesheet" href="static/stylesheets/confirmation.css">
+</head>
+<body>
+    
+    <div class="main">
+        <ul class="main-form">
+            <li class="title">
+                <span class="main-title">Confirmation Form</span>
+                <span class="under_text">Fill out the form carefully for registration</span>
+            </li>
+            <li class="input">
+                <span>Full Name</span>
+                <div class="Name">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+            </li>
+            <li class="input">
+                <label for="phone_number">Phone Number</label>
+                <input type="number"  name="phone_number">
+
+            </li>
+            <li class="input">
+                <span>Email</span>
+                <input type="email" name="email">
+            </li>
+            <li class="input">
+                <span>Address</span>
+                <input type="text" name="address">
+            </li>
+            <li class="input">
+                <span>Code Reduction</span>
+                <input type="text" id="reductio_code" name="reduction_code">
+            </li>
+            <li class="input">
+                <div class="options">
+                    <label for="b1">Credit-card
+                        <input type="radio" id="b1" name="payment_method" value="credit">
+                    </label>
+                    
+    
+                    <label for="b2">Cash
+                        <input type="radio" id="b2" name="payment_method" value="cash">
+                    </label>
+                    
+    
+                </div>
+
+            </li>
+
+            <li class="button">
+                <button type="button" id="btn">Submit</button>
+            </li>
+
+        </ul>
+        
+    </div>
+    <script src="static/javascripts/validation.js"></script>
+
+</body>
+</html>
